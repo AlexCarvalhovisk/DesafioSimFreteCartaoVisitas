@@ -15,8 +15,8 @@ const routes: Routes = [
     standalone: true,
     imports: [RouterModule],
     template: `
-    <router-outlet></router-outlet>
-  `,
+        <router-outlet></router-outlet>
+    `,
 })
 export class App {
 }

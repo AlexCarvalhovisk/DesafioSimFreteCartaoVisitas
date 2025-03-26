@@ -7,8 +7,8 @@ import {Router} from '@angular/router';
     selector: 'app-formulario',
     templateUrl: './formulario.component.html',
     styleUrls: ['./formulario.component.css'],
-    standalone: true, // Tornando este componente standalone
-  imports: [FormsModule] // Importando diretamente as dependências necessárias
+    standalone: true,
+    imports: [FormsModule]
 })
 export class FormularioComponent {
     dados = {
