@@ -25,7 +25,7 @@
     <label>Cidade:</label>
     <input type="text" [(ngModel)]="dados.cidade" name="cidade"/>
 
-    <button type="submit" [disabled]="form.invalid">
+    <button type="submit" [disabled]="disabled()">
         Gerar Cartão de Visitas
     </button>
 </form>

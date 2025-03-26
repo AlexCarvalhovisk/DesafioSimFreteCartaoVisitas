@@ -29,4 +29,17 @@ export class FormularioComponent {
         this.dadosService.setDados(this.dados);
         this.router.navigate(['/cartao']);
     }
+
+    disabled(): boolean {
+        return !(
+            this.dados?.nome &&
+            this.dados?.idade &&
+            this.dados?.telefone &&
+            this.dados?.email &&
+            this.dados?.rua &&
+            this.dados?.numero &&
+            this.dados?.bairro &&
+            this.dados?.cidade
+        );
+    }
 }
