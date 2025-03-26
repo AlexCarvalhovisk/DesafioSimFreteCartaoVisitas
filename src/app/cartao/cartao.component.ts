@@ -1,24 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { DadosService } from '../dados.service';
-import { Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {DadosService} from '../dados.service';
+import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-cartao',
-  templateUrl: './cartao.component.html',
-  styleUrls: ['./cartao.component.css'],
-  standalone: true,
+    selector: 'app-cartao',
+    templateUrl: './cartao.component.html',
+    styleUrls: ['./cartao.component.css'],
+    standalone: true,
 })
 export class CartaoComponent implements OnInit {
-  dados: any;
+    dados: any;
 
-  constructor(private dadosService: DadosService, private router: Router) {}
+    constructor(private dadosService: DadosService, private router: Router) {
+    }
 
-  ngOnInit(): void {
-    // Inicializa os dados ao carregar o componente
-    this.dados = this.dadosService.getDados();
-  }
+    ngOnInit(): void {
+        // Inicializa os dados ao carregar o componente
+        this.dados = this.dadosService.getDados();
+    }
 
-  voltar() {
-    this.router.navigate(['']);
-  }
+    voltar() {
+        this.router.navigate(['']);
+    }
 }

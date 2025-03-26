@@ -1,27 +1,27 @@
 <div class="cartao">
-  <div class="cartao-header">
-    <h2>Cartão de Visitas</h2>
-  </div>
-
-  <div class="cartao-conteudo">
-    <div class="informacoes-pessoais">
-      <h3>Informações Pessoais</h3>
-      <p><strong>Nome:</strong> {{ dados?.nome }}</p>
-      <p><strong>Idade:</strong> {{ dados?.idade }}</p>
-      <p><strong>Telefone:</strong> {{ dados?.telefone }}</p>
-      <p><strong>E-mail:</strong> {{ dados?.email }}</p>
+    <div class="cartao-header">
+        <h2>Cartão de Visitas</h2>
     </div>
 
-    <div class="endereco">
-      <h3>Endereço</h3>
-      <p><strong>Rua:</strong> {{ dados?.rua }}</p>
-      <p><strong>Número:</strong> {{ dados?.numero }}</p>
-      <p><strong>Bairro:</strong> {{ dados?.bairro }}</p>
-      <p><strong>Cidade:</strong> {{ dados?.cidade }}</p>
-    </div>
-  </div>
+    <div class="cartao-conteudo">
+        <div class="informacoes-pessoais">
+            <h3>Informações Pessoais</h3>
+            <p><strong>Nome:</strong> {{ dados?.nome }}</p>
+            <p><strong>Idade:</strong> {{ dados?.idade }}</p>
+            <p><strong>Telefone:</strong> {{ dados?.telefone }}</p>
+            <p><strong>E-mail:</strong> {{ dados?.email }}</p>
+        </div>
 
-  <div class="cartao-footer">
-    <button (click)="voltar()">Voltar</button>
-  </div>
+        <div class="endereco">
+            <h3>Endereço</h3>
+            <p><strong>Rua:</strong> {{ dados?.rua }}</p>
+            <p><strong>Número:</strong> {{ dados?.numero }}</p>
+            <p><strong>Bairro:</strong> {{ dados?.bairro }}</p>
+            <p><strong>Cidade:</strong> {{ dados?.cidade }}</p>
+        </div>
+    </div>
+
+    <div class="cartao-footer">
+        <button (click)="voltar()">Voltar</button>
+    </div>
 </div>
