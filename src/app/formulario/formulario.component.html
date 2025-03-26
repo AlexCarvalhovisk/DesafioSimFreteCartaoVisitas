@@ -1,0 +1,31 @@
+<form (ngSubmit)="enviarFormulario()" #form="ngForm">
+  <h2>Informações Pessoais</h2>
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="dados.nome" name="nome" />
+
+  <label>Idade:</label>
+  <input type="number" [(ngModel)]="dados.idade" name="idade" />
+
+  <label>Telefone:</label>
+  <input type="tel" [(ngModel)]="dados.telefone" name="telefone" />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="dados.email" name="email" />
+
+  <h2>Endereço</h2>
+  <label>Endereço:</label>
+  <input type="text" [(ngModel)]="dados.rua" name="rua" />
+
+  <label>Número:</label>
+  <input type="text" [(ngModel)]="dados.numero" name="numero" />
+
+  <label>Bairro:</label>
+  <input type="text" [(ngModel)]="dados.bairro" name="bairro" />
+
+  <label>Cidade:</label>
+  <input type="text" [(ngModel)]="dados.cidade" name="cidade" />
+
+  <button type="submit" [disabled]="form.invalid">
+    Gerar Cartão de Visitas
+  </button>
+</form>
